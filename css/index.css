@@ -1,0 +1,389 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background-color: #E2BDE2; }
+
+main {
+  font-family: serif;
+  background-color: #86a08f; }
+  main h1 {
+    color: #6D17C6;
+    font-style: italic;
+    text-align: center;
+    animation-duration: 4s;
+    animation-name: aparecer; }
+  main h2 {
+    color: #9953c7;
+    text-align: center;
+    font-style: italic; }
+  main h3 {
+    color: #581BA3;
+    font-style: italic;
+    text-align: center;
+    background-color: #9adaff; }
+  main h4 {
+    text-align: center;
+    font-style: italic;
+    color: #7958BC; }
+  main ul {
+    color: white;
+    list-style-type: square; }
+  main p {
+    color: #320B8B;
+    padding: 3%; }
+
+/*---------------------------------------------*/
+/* Tamaño del logo en index */
+.imagenPlanta {
+  width: 25%;
+  height: 25%;
+  position: center;
+  transition: 2s;
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+/*Index*/
+.div__bordes {
+  list-style: square;
+  border: dashed 2px #6A16BF;
+  margin: 25px;
+  padding: 25px;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  position: relative;
+  /*-------------Gradiente radial---------------------*/
+  background-image: radial-gradient(#418E3F, #B64DCC); }
+
+/*---------------------------------------------*/
+/* Atributos en la tabla de "Cocina_vegana"*/
+table, th, td {
+  border: solid 2px #3A066F;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-spacing: 5px; }
+
+/*---------------------------------------------*/
+/*Color en el formulario de contacto*/
+.formulario {
+  background-color: #C781EF; }
+
+/*---------------------------------------------*/
+/*Tamaño del titulo */
+.main__textoGrande {
+  font-size: 40px;
+  text-align: center; }
+
+/*---------------------------------------------*/
+/* Atributos para algunos h2 principalmente en la sda pag */
+.subrayado {
+  text-decoration: underline;
+  background-color: #EAD9FA; }
+
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+/*Productos y plantas*/
+/*Letras del titulo en la pag "Productos y Plantas"*/
+.colorYtexto {
+  color: #755e8d;
+  text-align: center; }
+
+section {
+  border: dashed 5px;
+  margin: 10px; }
+
+/*Imagen de fondo en la pag "Productos y Plantas"*/
+.flores {
+  background-image: url("../imagenes/Flor.jpg"); }
+
+/*----------------------------------------------*/
+/*----------------------------------------------------*/
+/*Flexbox en etiqueta DIV en la pagina Productos y plantas*/
+.padreFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+/*------------------------------------------------------*/
+/*tamaños de las imagenes en Productos y plantas*/
+.imgPlanta {
+  width: 370px;
+  transition: all 2s;
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+/*-----------------------------------------------------*/
+/*flexbox usado en la pagina Cocina vegana para centrar la tabla y agregar imagen de fondo*/
+.main__tabla {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #85ad94;
+  background-size: 15vw 45vh;
+  border: solid #0C17AA;
+  color: #2930CC; }
+
+/*----------------------------------------------------------------------------------------*/
+/*class utilizada en la pagina productos y plantas, en el <p>*/
+.recuadro {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 3px #2E38BD;
+  margin: 10px;
+  padding: 10px;
+  width: 99%; }
+
+/*----------------------------------------------------------------------------------------*/
+/*GRIDS*/
+/*Utilizadas en la pagina de Contactate con nosotros*/
+.colorForm {
+  color: white; }
+
+.container {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  justify-content: center;
+  align-items: center; }
+
+.main__titulo {
+  text-align: center;
+  font-size: 4em;
+  color: #5118A7;
+  justify-content: center;
+  align-items: center; }
+
+.agrupacion {
+  box-shadow: 0 0 20px 0; }
+
+.agrupacion > * {
+  padding: 2em; }
+
+.contact-form {
+  background-color: #743FBC; }
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contact-form form .bloque {
+  grid-column: 1/3; }
+
+.contact-form form p {
+  margin: 15px;
+  padding: 5px;
+  color: white; }
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: white;
+  border-bottom: 1px solid #469DC5; }
+
+.contact-form form button {
+  background-color: #9D8CBA;
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px; }
+
+/*------------Transicion del boton ENVIAR-----------------------*/
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background-color: #6B36A1;
+  color: white;
+  height: 85px;
+  transition: height 2s; }
+
+/*---------------------------------------------------------------*/
+.contact-info {
+  background-color: #6E57A4; }
+  .contact-info h4,
+  .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  .contact-info li {
+    padding: .3em; }
+
+/*Monitor*/
+@media (min-width: 700px) {
+  body {
+    padding: 0px; }
+  .agrupacion {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+  .agrupacion > * {
+    padding: 3em; }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+    text-align: left; } }
+
+@media screen and (max-width: 400px) {
+  .contenedor {
+    width: 100%; } }
+
+/*--------------------------------------------------------------------------------------------------*/
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*-----------------------------------------*/
+header {
+  padding: 5px;
+  height: 15%;
+  width: 98%;
+  background-image: linear-gradient(#7D60BF, #45D077);
+  color: #5118A7;
+  margin: 5px;
+  position: sticky;
+  top: 0; }
+
+footer {
+  padding: 3px;
+  height: 98%;
+  width: 98%;
+  background-image: linear-gradient(#5414A4, #995ACE);
+  /*---------------------------------------------*/
+  font-family: Arial;
+  color: white; }
+
+/*carrusel imagenes*/
+.carouselTamanio {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  transition: all 2s;
+  margin: auto; }
+
+/*bootstrap acordeon Productos y plantas*/
+.card {
+  background-color: #69B75C; }
+
+/*Contactate con nosotros*/
+.div__parrafo {
+  color: purple; }
+
+/*----------------------------------------------------------------------------------*/
+/* Mi constante */
+.lista {
+  color: #03030c;
+  background-color: grey; }
+
+/*----------------------------------------------------------------------------------*/
+.parrafo-1 {
+  width: 100vw;
+  height: 1vh;
+  padding: 1em;
+  color: #1c0d2e;
+  text-decoration: underline;
+  text-align: center; }
+
+.parrafo-2 {
+  width: 100vw;
+  height: 1vh;
+  padding: 2em;
+  color: #1c0d2e;
+  text-decoration: underline;
+  text-align: center; }
+
+.parrafo-3 {
+  width: 100vw;
+  height: 1vh;
+  padding: 3em;
+  color: #1c0d2e;
+  text-decoration: underline;
+  text-align: center; }
+
+/*----------------------------------------------------------------------------------*/
+.fondo {
+  background-color: #cf67cf;
+  width: 100vh; }
+
+div p {
+  background-color: #47fac4;
+  padding: 4%;
+  width: 100%; }
+
+/*color de letras utilizados en algunos titulos*/
+.colorBlanco {
+  color: #b1e4f8; }
+
+/*color menu*/
+header nav div ul {
+  background-color: #549b54; }
+
+/*color menu desplegable*/
+.ulDropdownColor {
+  background-color: #6b836b; }
+
+/*con quienes colaboramos*/
+a {
+  text-align: justify;
+  color: #260c27; }
+
+/*padding pag plantas*/
+.paddingPlantas {
+  margin: 25px;
+  padding: 25px; }
+
+.centradoTexto {
+  text-align: center;
+  padding: 50px; }
+
+.padreLink {
+  /*background: rgb(143, 118, 148);*/
+  background-image: url(../imagenes/violetamagik.jpg);
+  height: 75px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 50px; }
+
+.hijoLink {
+  background: #b076c7;
+  width: 300px;
+  text-align: center; }
+
+.padreCentrado {
+  /*background: rgb(143, 118, 148);*/
+  height: 200px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px; }
+
+.hijoCentrado {
+  /*background: rgb(176, 118, 199);*/
+  width: 25fr;
+  text-align: center; }
+
+/*div{
+	border: dashed;
+
+}*/
